@@ -58,6 +58,7 @@ function start(){
         on.style.left="-100%"
         pdish1.style.left="-100%"
         filter1.style.left="-100%"
+        startbutton.style.visibility="hidden"
         
         setTimeout(function(){
             f=44
@@ -68,7 +69,7 @@ function start(){
             solselector=sol1
 
             // 
-            flaskpour()
+            // flaskpour()
         },2000)
     }
 
