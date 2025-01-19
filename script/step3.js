@@ -13,6 +13,14 @@ let machine = document.querySelector("#machine")
 let frontline = document.querySelector("#frontline")
 let backline = document.querySelector("#backline")
 
+let cork1 = document.querySelector("#cork1")
+let cork2 = document.querySelector("#cork2")
+let cork3 = document.querySelector("#cork3")
+let cork4 = document.querySelector("#cork4")
+let cork5 = document.querySelector("#cork5")
+
+
+let cs = 0
 let statusmachine = "off"
 let tempins
 
@@ -173,6 +181,41 @@ function stopmachine(){
 
 
 
+function corks(){
+    if(cs==0){
+
+        cork1.style.visibility="visible"
+        cork2.style.visibility="visible"
+        cork3.style.visibility="visible"
+        cork4.style.visibility="visible"
+        cork5.style.visibility="visible"
+        setTimeout(function(){
+            cork1.style.opacity="100%"
+            cork2.style.opacity="100%"
+            cork3.style.opacity="100%"
+            cork4.style.opacity="100%"
+            cork5.style.opacity="100%"
+            cs=1
+        },1000)
+    }
+    else if(cs==1){
+
+        cork1.style.opacity="0%"
+        cork2.style.opacity="0%"
+        cork3.style.opacity="0%"
+        cork4.style.opacity="0%"
+        cork5.style.opacity="0%"
+        setTimeout(function(){
+            cork1.style.visibility="hidden"
+            cork2.style.visibility="hidden"
+            cork3.style.visibility="hidden"
+            cork4.style.visibility="hidden"
+            cork5.style.visibility="hidden"
+            cs=0
+        },1000)
+    }
+}
+
 
 
 
@@ -191,6 +234,12 @@ function flaskshakerplace(){
     sol4.style.bottom="65%"
     sol5.style.bottom="65%"
 
+    cork1.style.top="5%"
+    cork2.style.top="5%"
+    cork3.style.top="5%"
+    cork4.style.top="5%"
+    cork5.style.top="5%"
+
     setTimeout(function(){
 
         flask1.style.left="25%"
@@ -204,6 +253,12 @@ function flaskshakerplace(){
         sol3.style.left="45%"
         sol4.style.left="55%"
         sol5.style.left="65%"
+
+        cork1.style.left="26%"
+        cork2.style.left="36%"
+        cork3.style.left="46%"
+        cork4.style.left="56%"
+        cork5.style.left="66%"
 
         shakerplate.style.left="21%"
         shakermachine.style.left="25%"
@@ -221,6 +276,12 @@ function flaskshakerplace(){
             sol3.style.bottom="53%"
             sol4.style.bottom="53%"
             sol5.style.bottom="53%"
+
+            cork1.style.top="17%"
+            cork2.style.top="17%"
+            cork3.style.top="17%"
+            cork4.style.top="17%"
+            cork5.style.top="17%"
 
             frontline.style.visibility="visible"
             backline.style.visibility="visible"
@@ -256,6 +317,12 @@ function flaskshakerreverse(){
         sol3.style.bottom="65%"
         sol4.style.bottom="65%"
         sol5.style.bottom="65%"
+
+        cork1.style.top="5%"
+        cork2.style.top="5%"
+        cork3.style.top="5%"
+        cork4.style.top="5%"
+        cork5.style.top="5%"
         
         setTimeout(function(){
             
@@ -270,6 +337,12 @@ function flaskshakerreverse(){
             sol3.style.left="67%"
             sol4.style.left="77%"
             sol5.style.left="87%"
+
+            cork1.style.left=""
+            cork2.style.left=""
+            cork3.style.left=""
+            cork4.style.left=""
+            cork5.style.left=""
             
             shakerplate.style.left="-100%"
             shakermachine.style.left="-100%"
@@ -287,6 +360,12 @@ function flaskshakerreverse(){
                 sol3.style.bottom="10%"
                 sol4.style.bottom="10%"
                 sol5.style.bottom="10%"
+
+                cork1.style.top=""
+                cork2.style.top=""
+                cork3.style.top=""
+                cork4.style.top=""
+                cork5.style.top=""
                 f=34
                 ins.innerText="Press 'TARE' button on wheighing machine."
                 
@@ -305,6 +384,8 @@ function flaskshakerreverse(){
                 filter3.style.visibility="visible"
                 filter4.style.visibility="visible"
                 filter5.style.visibility="visible"
+                cs=1
+                corks()
             },1000)
         },1000)
     },1000)

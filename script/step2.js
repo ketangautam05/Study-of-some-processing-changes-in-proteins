@@ -190,6 +190,7 @@ function bufferverify(){
         startbutton.innerText="NEXT"
         f=22
         startbutton.style.visibility="visible"
+        corks()
     }
 }
 

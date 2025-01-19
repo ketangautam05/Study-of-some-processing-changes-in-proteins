@@ -297,7 +297,33 @@ body{
 }
 
 
+.cork{
+    position: absolute;
+    height: 10%;
+    width: 5.9%;
+    top: 60%;
+    left: 48%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+    opacity: 0%;
+}
 
+#cork2{
+    left: 58%;
+}
+
+#cork3{
+    left: 68%;
+}
+
+#cork4{
+    left: 78%;
+}
+
+#cork5{
+    left: 88%;
+}
 
 
 .sample{
@@ -642,6 +668,18 @@ body{
     visibility: visible;
     transition: all;
     transition-duration: 1s;
+}
+
+#nesol1{
+    position: absolute;
+    width: 7.9%;
+    height: 15.5%;
+    bottom: 10%;
+    left: -100%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: visible;
+    opacity: 0%;
 }
 
 #funnel{

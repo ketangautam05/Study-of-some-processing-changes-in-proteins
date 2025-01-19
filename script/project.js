@@ -64,6 +64,7 @@ function start(){
             f=44
             funnel.style.left="19.9%"
             neflask1.style.left="20%"
+            nesol1.style.left="20%"
             ins.innerText="Click on first left flask to pour its solution and filter it."
             flaskselector=flask1
             solselector=sol1
@@ -71,6 +72,17 @@ function start(){
             // 
             // flaskpour()
         },2000)
+    }
+    else if(f==49){
+        f=50
+        startbutton.style.visibility="hidden"
+        machine.style.left=""
+        setTimeout(function(){
+            reading.style.left=""
+            tare.style.left=""
+            on.style.left=""
+            ins.innerText="Click on First left petridish to measure its weight and record in table."
+        },1000)
     }
 
 
