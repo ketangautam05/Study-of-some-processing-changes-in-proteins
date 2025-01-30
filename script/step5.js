@@ -61,9 +61,9 @@ function flaskpour(){
                                     setTimeout(function(){
                                         flaskselector.style.visibility="hidden"
                                         ins.innerText="Click on funnel to transfer that Insoluble matter in a pre-weight petri-dish."
-                                        f=46
                                         pdishselector.style.left=pdishleft
                                         pdishselector.style.top="83%"
+                                        f=46
                                     },1000)                                    
                                 },1000)
                             },1000)

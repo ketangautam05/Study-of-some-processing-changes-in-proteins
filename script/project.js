@@ -4,7 +4,8 @@ let ins = document.querySelector("#text")
 let stp1 = document.querySelector("#stp1")
 let stp2 = document.querySelector("#stp2")
 let stp3 = document.querySelector("#stp3")
-
+let lastbg = document.querySelector("#lastbg")
+let inference = document.querySelector("#inference")
 
 
 
@@ -78,6 +79,7 @@ function start(){
         startbutton.style.visibility="hidden"
         machine.style.left=""
         setTimeout(function(){
+            f=51
             reading.style.left=""
             tare.style.left=""
             on.style.left=""
@@ -85,6 +87,41 @@ function start(){
         },1000)
     }
 
+    else if(f==55){
+        f=56
+
+        // the code for oven step
+    }
+
+    else if(f==70){
+        f=71
+        startbutton.style.visibility="hidden"
+        tbl1.style.visibility="visible"
+        lastbg.style.top="0%"
+        tbl1.style.right="22.5%"
+        ins.innerText="Enter solubility for sample A then press check button."
+
+    }
+    else if(f==72){
+        f=73
+        tbl1.style.right="40%"
+        graph.style.height="40%"
+        graph.style.width="30%"
+        startbutton.style.visibility="hidden"
+        setTimeout(function(){
+            f=74
+            startbutton.style.visibility="visible"
+            startbutton.innerText="Inference"
+            ins.innerText="Press 'Inference' button to see the inference of this experiment."
+        },3000)
+    }
+    else if(f==74){
+        f=75
+        inference.style.top="0%"
+        startbutton.style.visibility="hidden"
+        ins.innerText="Congratulations! You have successfully completed the experiment."
+    }
+        
 
 
 }

@@ -129,11 +129,11 @@
 
 
           <img id="funnel" onclick="funnel1()" src="images/funnel.png" alt="">
-          <img class="im" id="im1" src="images/insoluble-matter.png" alt="">
-          <img class="im" id="im2" src="images/insoluble-matter.png" alt="">
-          <img class="im" id="im3" src="images/insoluble-matter.png" alt="">
-          <img class="im" id="im4" src="images/insoluble-matter.png" alt="">
-          <img class="im" id="im5" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im1" onclick="imselect1()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im2" onclick="imselect2()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im3" onclick="imselect3()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im4" onclick="imselect4()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im5" onclick="imselect5()" src="images/insoluble-matter.png" alt="">
           <img id="nesol1" src="images/conical-flask - 100ml-solution colourless.png" alt="">
           <img id="neflask1" src="images/conical-flask - 100ml.png" alt="">
 
@@ -141,7 +141,16 @@
 
 
         <!-- ---------------------------------    TABLE    -------------------------------------------- -->
+        <div id="lastbg">
+          <img id="graph" src="images/graph-new.PNG" alt="">
+          <h3 id="solubility">Solubility (S,%) = <input type="number" maxlength="2" max="99" min="0" step="1.0" id="solubilityinput" style="color:blue" placeholder="Sample A"></h3>
+          <button id="checkbtn" onclick="checker()">Check</button>
+          <button id="resultbtn" onclick="result()">Result</button>
+          <h3 id="resulter">Right answer</h3>
+          <h1 id="ftext" onclick="fhider()">Click me to show formula</h1>
+          <img id="formula" src="images/formula.PNG" alt="">
 
+        </div>
 
         <div id="alltables">
 
@@ -161,56 +170,60 @@
               <td>10.00</td>
               <td id="p1"></td>
               <td id="f1"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="pfim1"></td>
+              <td id="pfimnew1"></td>
+              <td id="oim1"></td>
+              <td id="s1"></td>
             </tr>
             <tr>
               <td>B (pH 4.0)</td>
               <td>10.00</td>
               <td id="p2"></td>
               <td id="f2"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="pfim2"></td>
+              <td id="pfimnew2"></td>
+              <td id="oim2"></td>
+              <td id="s2"></td>
             </tr>
             <tr>
               <td>C (pH 4.5)</td>
               <td>10.00</td>
               <td id="p3"></td>
               <td id="f3"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="pfim3"></td>
+              <td id="pfimnew3"></td>
+              <td id="oim3"></td>
+              <td id="s3"></td>
             </tr>
             <tr>
               <td>D (pH 6.0)</td>
               <td>10.00</td>
               <td id="p4"></td>
               <td id="f4"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="pfim4"></td>
+              <td id="pfimnew4"></td>
+              <td id="oim4"></td>
+              <td id="s4"></td>
             </tr>
             <tr>
               <td>E (pH 8.0)</td>
               <td>10.00</td>
               <td id="p5"></td>
               <td id="f5"></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="pfim5"></td>
+              <td id="pfimnew5"></td>
+              <td id="oim5"></td>
+              <td id="s5"></td>
             </tr>
           </table>
           
         </div>
 
-
+        <div id="inference">
+          <h1 id="iheader"> Inference</h1>
+          <img id="graph2" src="images/graph-new.PNG" alt="">
+          <h3 id="itext">The curve indicated that the solubility of protein affected by pH and it was minimum at pH 4.5, which is the isoelectric pH of the protein powder. </h3>
+        </div>
 
 
 
@@ -227,6 +240,8 @@
   <script src="script/step4.js"></script> 
   <script src="script/step5.js"></script>
   <script src="script/step6.js"></script>  
+  <script src="script/step7.js"></script>
+  <script src="script/step8.js"></script>
   <script src="script/stopwatch.js"></script>
   <script src="script/bypass.js"></script>
 </body>
