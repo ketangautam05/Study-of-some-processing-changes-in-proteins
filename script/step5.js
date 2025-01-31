@@ -193,3 +193,161 @@ function flaskpourverify(){
     }
 }
 
+
+
+
+function ovenplace(){
+
+    machine.style.left="-100%"
+    reading.style.left="-100%"
+    on.style.left="-100%"
+    tare.style.left="-100%"
+
+    im1.style.left="10%"
+    im2.style.left="20%"
+    im3.style.left="30%"
+    im4.style.left="40%"
+    im5.style.left="50%"
+    pdish1.style.left="10%"
+    pdish2.style.left="20%"
+    pdish3.style.left="30%"
+    pdish4.style.left="40%"
+    pdish5.style.left="50%"
+    setTimeout(function(){
+        
+        im1.style.top="75%"
+        im2.style.top="75%"
+        im3.style.top="75%"
+        im4.style.top="75%"
+        im5.style.top="75%"
+        pdish1.style.top="75%"
+        pdish2.style.top="75%"
+        pdish3.style.top="75%"
+        pdish4.style.top="75%"
+        pdish5.style.top="75%"
+        
+        setTimeout(function(){
+            
+            im1.style.scale = "0.8"
+            im2.style.scale = "0.8"
+            im3.style.scale = "0.8"
+            im4.style.scale = "0.8"
+            im5.style.scale = "0.8"
+            pdish1.style.scale = "0.8"
+            pdish2.style.scale = "0.8"
+            pdish3.style.scale = "0.8"
+            pdish4.style.scale = "0.8"
+            pdish5.style.scale = "0.8"
+            
+            im1.style.left="30%"
+            im2.style.left="37%"
+            im3.style.left="44%"
+            im4.style.left="51%"
+            im5.style.left="58%"
+            
+            pdish1.style.left="30%"
+            pdish2.style.left="37%"
+            pdish3.style.left="44%"
+            pdish4.style.left="51%"
+            pdish5.style.left="58%"
+
+            ovendiv.style.left="10%"
+            gate.style.left="72%"
+
+            setTimeout(function(){
+                
+                im1.style.top="72%"
+                im2.style.top="72%"
+                im3.style.top="72%"
+                im4.style.top="72%"
+                im5.style.top="72%"
+                pdish1.style.top="72%"
+                pdish2.style.top="72%"
+                pdish3.style.top="72%"
+                pdish4.style.top="72%"
+                pdish5.style.top="72%"
+
+                setTimeout(function(){
+                    ins.innerText="Press 'On/Off' button on OVEN."
+                    f=56
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+    }
+
+
+    function ovenreverse(){
+        im1.style.top="75%"
+        im2.style.top="75%"
+        im3.style.top="75%"
+        im4.style.top="75%"
+        im5.style.top="75%"
+        pdish1.style.top="75%"
+        pdish2.style.top="75%"
+        pdish3.style.top="75%"
+        pdish4.style.top="75%"
+        pdish5.style.top="75%"
+        setTimeout(function(){
+            im1.style.left="10%"
+            im2.style.left="20%"
+            im3.style.left="30%"
+            im4.style.left="40%"
+            im5.style.left="50%"
+            pdish1.style.left="10%"
+            pdish2.style.left="20%"
+            pdish3.style.left="30%"
+            pdish4.style.left="40%"
+            pdish5.style.left="50%"
+
+            im1.style.scale = "1"
+            im2.style.scale = "1"
+            im3.style.scale = "1"
+            im4.style.scale = "1"
+            im5.style.scale = "1"
+            pdish1.style.scale = "1"
+            pdish2.style.scale = "1"
+            pdish3.style.scale = "1"
+            pdish4.style.scale = "1"
+            pdish5.style.scale = "1"
+
+            setTimeout(function(){
+                im1.style.top="83%"
+                im2.style.top="83%"
+                im3.style.top="83%"
+                im4.style.top="83%"
+                im5.style.top="83%"
+                pdish1.style.top="83%"
+                pdish2.style.top="83%"
+                pdish3.style.top="83%"
+                pdish4.style.top="83%"
+                pdish5.style.top="83%"
+
+                ovendiv.style.left="150%"
+                gate.style.left="166%"
+
+                setTimeout(function(){
+                    im1.style.left="40%"
+                    im2.style.left="50%"
+                    im3.style.left="60%"
+                    im4.style.left="70%"
+                    im5.style.left="80%"
+                    pdish1.style.left="40%"
+                    pdish2.style.left="50%"
+                    pdish3.style.left="60%"
+                    pdish4.style.left="70%"
+                    pdish5.style.left="80%"
+
+                    machine.style.left=""
+                    setTimeout(function(){
+                        tare.style.left=""
+                        on.style.left=""
+                        reading.style.left=""
+                        ins.innerText="Click on first left petridish to measure its weight and record in table."
+                        f=51
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    }
+    

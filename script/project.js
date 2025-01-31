@@ -88,9 +88,9 @@ function start(){
     }
 
     else if(f==55){
-        f=56
-
-        // the code for oven step
+        f=560
+        ovenplace()
+        startbutton.style.visibility="hidden"
     }
 
     else if(f==70){

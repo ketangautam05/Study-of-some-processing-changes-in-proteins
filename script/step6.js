@@ -126,11 +126,12 @@ function imverify(){
             imselector=im1
             pdishselector=pdish1
             pfimselector = pfimnew1
+            imleftnew="40%"
             imweight="42.65"
             startbutton.style.visibility="visible"
             ins.innerText="Press NEXT button."
             f=55
-            petritrial="2nd"
+            
         }
     }
     // ///////////////////////////////////////////////  2nd trial  ///////////////////////////////////////////////

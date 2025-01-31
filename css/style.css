@@ -887,9 +887,203 @@ td{
 }
 
 
+/* *********************************************  OVEN CSS   ************************************************* */
 
 
+#ovendiv{
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    bottom: 6%;
+    left: 150%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: visible;
+    font-family: digital;
+    /* display: flex; */
+}
 
+#gate{
+    position: absolute;
+    height: 70%;
+    width: 47%;
+    bottom: 10%;
+    /* left: 26%; */
+    /* left: 72%; */
+    left: 166%;
+    visibility: visible;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#oven{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+/* *******************************  OVEN DISPLAY   ****************************************** */
+#tempscreen{
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+    color: orangered;
+}
+
+#temptext{
+    position: absolute;
+    font-size: 3vw;
+    top: 26%;
+    right: 85%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#celcius{
+    position: absolute;
+    font-size: 3vw;
+    right: 81%;
+    top: 26%;
+    font-weight: 100;
+}
+
+#timerscreen{
+    position: absolute;
+    display: flex;
+    color: rgb(47, 220, 255);
+    top: 34%;
+    font-size: 1.5vw;
+    right: 82%;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+}
+
+#hournew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#minutenew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#secondnew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#colon1st{
+    margin-right: 2%;
+    font-weight: 100;
+}
+
+#colon2nd{  
+    margin-right: 2%;
+    font-weight: 100;
+}
+
+
+#onoffbtntext{
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    top: 86%;
+    left: 4.6%;
+    color: rgb(36, 36, 36);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#onoffbtn{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 5%;
+    height: 5%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: radial-gradient(rgb(226, 226, 226),rgb(135, 124, 124));
+    /* background-image: radial-gradient(rgb(255, 215, 15),rgb(255, 122, 6)); */
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#plusbtn,#minusbtn,#tempbtn,#hourbtn,#minutebtn,#secondbtn{
+    position: absolute;
+    top: 45%;
+    left: 3.5%;
+    width: 4%;
+    height: 4%;
+    border-radius: 5px;
+    font-size: 0.9vw;
+    font-weight: 100;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgb(0, 251, 255);
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#minutebtn{
+    left: 9.5%;
+}
+
+#secondbtn{
+    left: 15%;
+}
+
+#tempbtn{
+    left: 5%;
+    top: 62%;
+    height: 4.5%;
+    width: 4.5%;
+    font-size: 0.7vw;
+    background-color: orangered;
+    color: white;
+}
+
+#plusbtn{
+    left: 13%;
+    top: 55%;
+    font-size: 1vw;
+    background-color: rgb(4, 255, 0);
+}
+
+#minusbtn{
+    left: 13%;
+    top: 69%;
+    font-size: 1vw;
+    background-color: rgb(4, 255, 0);
+}
+
+#plusbtn:active,#minusbtn:active,#tempbtn:active,#hourbtn:active,#minutebtn:active,#secondbtn:active,#onoffbtn:active{
+    scale: 0.9;
+}
 
 
 

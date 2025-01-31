@@ -72,6 +72,34 @@
           <img id="machine" src="images/wheighing-machine.png" alt="">
           <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
 
+          <div id="ovendiv">
+
+            <img id="oven" src="images/oven.png" alt="">
+
+            <div id="tempscreen">
+              <h1 id="temptext">00</h1>
+              <h1 id="celcius">C</h1>
+            </div>
+            <div id="timerscreen">
+              <h1 id="hournew">00</h1>
+              <h1 id="colon1st">:</h1>
+              <h1 id="minutenew">00</h1>
+              <h1 id="colon2nd">:</h1>
+              <h1 id="secondnew">00</h1>
+            </div>
+
+
+            <button id="plusbtn" onclick="plusnew1()">+</button>
+            <button id="minusbtn" onclick="minusnew1()">-</button>
+            <button id="tempbtn" onclick="tempnew1()">TEMP</button>
+            <button id="hourbtn" onclick="hournew1()">HH</button>
+            <button id="minutebtn" onclick="minutenew1()">MM</button>
+            <button id="secondbtn" onclick="secondnew1()">SS</button>
+
+            <button id="onoffbtn" onclick="onoffnew1()"></button>
+            <h1 id="onoffbtntext">On/Off</h1>
+
+          </div>
           
           <img class="pdishs" id="pdish1" onclick="petri()" src="images/petri-dish.png" alt="">
           <img class="pdishs" id="pdish2" onclick="petri()" src="images/petri-dish.png" alt="">
@@ -136,6 +164,8 @@
           <img class="im" id="im5" onclick="imselect5()" src="images/insoluble-matter.png" alt="">
           <img id="nesol1" src="images/conical-flask - 100ml-solution colourless.png" alt="">
           <img id="neflask1" src="images/conical-flask - 100ml.png" alt="">
+
+          <img id="gate" onclick="door()" src="images/gate.png" alt="">
 
         </div>
 
@@ -243,6 +273,7 @@
   <script src="script/step7.js"></script>
   <script src="script/step8.js"></script>
   <script src="script/stopwatch.js"></script>
+  <script src="script/stopwatch2.js"></script>
   <script src="script/bypass.js"></script>
 </body>
 </html>
