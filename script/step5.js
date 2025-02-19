@@ -39,15 +39,28 @@ function flaskpour(){
             flaskselector.style.left="28%"
             solselector.style.left="28%"
             imselector.style.visibility="visible"
+            falsolselect.style.visibility="visible"
+            falsolselect.src="images/solfal.png"
+            falsolselect.style.left="26.7%"
+            falsolselect.style.top="53%"
+            falsolselect.opacity="100%"
             setTimeout(function(){
                 flaskselector.style.rotate="-45deg"
                 solselector.style.rotate="-45deg"
                 solselector.style.bottom="29.8%"
                 solselector.style.left="29.8%"
                 setTimeout(function(){
+                    falsolselect.style.height="5%"
+                    setTimeout(function(){
+                        falsolselect.style.height="0%"
+                        falsolselect.style.top="58%"
+                    },2000)
+                },1000)
+                setTimeout(function(){
                     imselector.style.opacity="100%"
                     solselector.style.opacity="0%"
                     nesol1.style.opacity="100%"
+                    falsolselect.style.visibility="hidden"
                     setTimeout(function(){
                         flaskselector.style.rotate=""
                         solselector.style.rotate=""

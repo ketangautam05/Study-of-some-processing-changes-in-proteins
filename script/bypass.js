@@ -39,7 +39,11 @@
 //         sample4.style.visibility="hidden"
 //         sample5.style.visibility="hidden"
         
-        
+//         f=200
+//         msol.style.height="42%"
+//         // cylinder()
+//         // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9
+
 //         f=22
 //         start()
 

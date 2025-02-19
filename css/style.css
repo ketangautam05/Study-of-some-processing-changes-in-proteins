@@ -349,7 +349,7 @@ body{
     height: 28%;
     width: 9.9%;
     bottom: 12%;
-    left: 20.05%;
+    left: 10.05%;
     visibility: hidden;
     transition: all;
     opacity: 50%;
@@ -365,7 +365,7 @@ body{
     width: 10%;
     height: 40%;
     bottom: 12%;
-    left: 20%;
+    left: 10%;
     transition: all;
     transition-duration: 1s;
     
@@ -380,7 +380,7 @@ body{
     position: absolute;
     height: 4%;
     top: 47%;
-    left: 23.3%;
+    left: 13.3%;
     width: 3.6%;
     transition: all;
     transition-duration: 1s;
@@ -393,11 +393,45 @@ body{
     width: 0.3%;
     left: 50.8%;
     top: 25%;
-    opacity: 50%;
+    opacity: 70%;
     transition: all;
     transition-duration: 0.5s;
     visibility: hidden;
 }
+
+#cyl{
+    position: absolute;
+    height: 30%;
+    width: 6%;
+    bottom: 10%;
+    left: 35%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#mcyl{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+}
+
+#msol{
+    position: absolute;
+    /* height: 42%; */
+    height: 0%;
+    bottom: 3%;
+    left: 22%;
+    width: 56%;
+    opacity: 50%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+
+
 
 #stp3{
     position: absolute;
